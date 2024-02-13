@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>AQI to Cigarettes per Day Calculator</title>
+</head>
+
+<body>
+    <div class="calculator-container">
+        <h1>AQI to Cigarettes per Day Calculator</h1>
+        <p>Enter the Air Quality Index (AQI) to see the equivalent number of cigarettes smoked per day based on health impact.</p>
+
+
+        <input type="tel" id="aqiInput" placeholder="Enter AQI" inputmode="numeric">
+
+        <button onclick="calculateCigarettes()">Calculate</button>
+        <div id="result"></div>
+    </div>
+
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>How is the calculation done?</h3>
+            <p>The health impact is calculated based on the logic: (AQI / 22) * 24 hours. This is an approximation and may vary based on the type of air pollution.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Is this calculation accurate for all types of air pollution?</h3>
+            <p>No, the calculation is a generalization and may not be accurate for all types of air pollution. Wood smoke, for example, may have different health impacts.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Why does the equivalent cigarettes value round to 1 sometimes?</h3>
+            <p>The rounding may occur due to the nature of the conversion and the specific breakpoints used in the calculation. It is an inherent limitation of the method.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="github-section info-paragraph">
+            <div class="info-column">
+                <h2><a href="https://github.com/shauryainks/AQI-Cigarettes" target="_blank">GitHub Repository</a></h2>
+                <p class="info-paragraph">Check out the source code and contribute on GitHub.</p>
+            </div>
+
+
+            <br>
+
+            <div class="info-column info-paragraph">
+                <h2><a href="https://github.com/shauryainks/AQI-Cigarettes/issues" target="_blank">Report Issues</a></h2>
+                <p class="info-paragraph">Feel free to open an issue on GitHub or reach out for assistance.</p>
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <a href="https://shauryainks.com">&copy; 2024 AQI to Cigarettes Calculator. All rights reserved.</a>
+        </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
